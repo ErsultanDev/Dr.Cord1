@@ -1,0 +1,142 @@
+//main: ..//style.less
+.b4-2 {
+    background: #FF0D1A;
+    color: #fff;
+
+    .b4_wrapper {
+        .b4_title {
+            color: #fff;
+        }
+    }
+
+}
+
+.b4 {
+    padding: 90px 0;
+
+    .b4_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            color: #F04D56;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "MuseoSansBold";
+
+        }
+
+        h3 {
+            text-transform: uppercase;
+            margin-top: 80px;
+            font-size: 20px;
+            color: #F04D56;
+
+        }
+
+        .b4_start {
+            width: 500px;
+        }
+
+        .b4_list {
+            .b4_item {
+                display: flex;
+                margin-bottom: 35px;
+                align-items: center;
+
+                img {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .b4_end {
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .b4_btn {
+            width: 255px;
+            margin: 30px auto;
+
+            .btn {
+                padding: 10px 75px;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b4 {
+        .b4_wrapper {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width:966px) {
+    .b4 {
+        .b4_wrapper {
+            padding: 0;
+            flex-direction: column;
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        padding: 60px 0;
+        background-image: none;
+
+        .b4_wrapper {
+            width: 300px;
+            text-align: center;
+
+            h2 {
+                font-size: 16px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+
+            .b4_title {
+                margin-top: 30px;
+
+            }
+
+            .b4_end {
+                width: auto;
+            }
+
+            .b4_start {
+                width: auto;
+                margin-bottom: 30px;
+            }
+
+            .b4_list {
+                .b4_item {
+                    flex-direction: column;
+
+                    p {
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
